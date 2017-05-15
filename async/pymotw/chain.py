@@ -6,12 +6,14 @@ import asyncio
  but that can run concurrently with other operations.'''
 
 
-'''The yield from keyword is used instead of adding the new coroutines to the loop, 
-because control_flow (поток управления) is already inside of a coroutine 
-being_managed_by_the_loop (управляемой циклом обработки) so it isn’t necessary to tell the loop
-to manage the new coroutines.(поэтому нет необх. говорить циклу об управлении новыми корутинами)'''
 @asyncio.coroutine
 def outer():
+    """
+    The yield from keyword is used instead of adding the new coroutines to the loop, 
+    because control_flow (поток управления) is already inside of a coroutine 
+    being_managed_by_the_loop (управляемой циклом обработки) so it isn’t necessary to tell the loop
+    to manage the new coroutines.(поэтому нет необх. говорить циклу об управлении новыми корутинами)
+    """
     print('in outer')
     print('waiting for result1')
     result1 = yield from phase1()
