@@ -5,18 +5,35 @@ import websockets
 
 
 @asyncio.coroutine
+def listner(channel):
+    while (yield from channel.wait_message()):
+        msg = yield from channel.get()
+        print(msg)
+
+
+@asyncio.coroutine
+def subscribe():
+    redis_sub = yield from aioredis.create_redis(('localhost', 6379))
+    redis_sub.delete('all')
+
+    ch = yield from redis_sub.subscribe('all')
+    yield from listner(ch[0])
+
+
+@asyncio.coroutine
 def connect(ws, path, **kwargs):
     print('Connected')
     while True:
         data = yield from ws.recv()
-        print(data)
-        kwargs['conn'].publish('all', data)
+        kwargs['redis'].publish('all', data)
 
 
 @asyncio.coroutine
 def start_server():
-    conn = yield from aioredis.create_redis(('localhost', 6379))
-    yield from websockets.serve(functools.partial(connect, conn=conn), 'localhost', 8765)
+    redis_pub = yield from aioredis.create_redis(('localhost', 6379))
+    yield from websockets.serve(functools.partial(connect, redis=redis_pub), 'localhost', 8765)
+
+    yield from subscribe()
 
 if __name__ == '__main__':
 
