@@ -3,35 +3,62 @@ import functools
 import aioredis
 import websockets
 
+connected = set()
+CHANNEL = 'chanel_A'
+RHOST = 'localhost'
+RPORT = 6379
+WSHOST = 'localhost'
+
+
+class Session:
+    def __init__(self, ws):
+        global connected
+        self.socket = ws
+        self.connected = connected
+
+    def __enter__(self):
+        print('Client connected')
+        self.connected.add(self.socket)
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print('Client disconnected')
+        self.connected.remove(self.socket)
+
 
 @asyncio.coroutine
 def listner(channel):
     while (yield from channel.wait_message()):
-        msg = yield from channel.get()
-        print(msg)
+        msg = yield from channel.get(encoding="utf-*")
+        print('Message: {} from {}'.format(msg, channel.name))
+        global connected
+        for ws in connected:
+            yield from ws.send(msg)
 
 
 @asyncio.coroutine
 def subscribe():
-    redis_sub = yield from aioredis.create_redis(('localhost', 6379))
-    redis_sub.delete('all')
+    redis_sub = yield from aioredis.create_redis((RHOST, RPORT))
+    redis_sub.delete(CHANNEL)
 
-    ch = yield from redis_sub.subscribe('all')
+    ch = yield from redis_sub.subscribe(CHANNEL)
     yield from listner(ch[0])
 
 
 @asyncio.coroutine
 def connect(ws, path, **kwargs):
-    print('Connected')
-    while True:
-        data = yield from ws.recv()
-        kwargs['redis'].publish('all', data)
+    with Session(ws):
+        while True:
+            try:
+                data = yield from ws.recv()
+                kwargs['redis_pub'].publish(CHANNEL, data)
+            except websockets.ConnectionClosed:
+                break
 
 
 @asyncio.coroutine
 def start_server():
-    redis_pub = yield from aioredis.create_redis(('localhost', 6379))
-    yield from websockets.serve(functools.partial(connect, redis=redis_pub), 'localhost', 8765)
+    redis_pub = yield from aioredis.create_redis((RHOST, RPORT))
+    yield from websockets.serve(functools.partial(connect, redis_pub=redis_pub), WSHOST, 8765)
 
     yield from subscribe()
 
