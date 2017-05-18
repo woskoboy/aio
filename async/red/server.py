@@ -1,7 +1,7 @@
 import asyncio
 import functools
-import redis
-# import aioredis
+
+import aioredis
 import websockets
 # many_ws = []
 #
@@ -46,24 +46,24 @@ import websockets
 #         yield from que.put(data)
 #     yield from websockets.serve(functools.partial(handler, que=que), 'localhost', 8765)
 
-conn = redis.Redis(host='localhost', port=6379)
-
 
 @asyncio.coroutine
-def connect(ws, path):
+def connect(ws, path, **kwargs):
     print('Connected')
     while True:
         data = yield from ws.recv()
         print(data)
-        conn.publish('all', data)
+        kwargs['conn'].publish('all', data)
 
 
 @asyncio.coroutine
-def prepare():
-    yield from websockets.serve(connect, 'localhost', 8765)
+def start_server():
+    conn = yield from aioredis.create_redis(('localhost', 6379))
+    tasks = [websockets.serve(functools.partial(connect, conn=conn), 'localhost', 8765)]
+    asyncio.gather(*tasks)
 
 if __name__ == '__main__':
 
     loop = asyncio.get_event_loop()
-    loop.run_until_complete(prepare())
+    loop.run_until_complete(start_server())
     loop.run_forever()

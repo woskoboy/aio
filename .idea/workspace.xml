@@ -2,49 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92d3ef4f-46f1-4240-afd4-ae0096eaf4cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/async/aio/other_session.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/bd.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/br.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/cd.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/cn.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/de.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/eg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/et.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/fr.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/id.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/in.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/ir.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/jp.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/mx.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/ng.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/ph.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/pk.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/ru.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/tr.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/us.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/downloads/vn.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/bd.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/br.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/cd.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/cn.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/de.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/eg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/et.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/fr.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/id.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/in.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/ir.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/jp.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/mx.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/ng.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/ph.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/pk.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/ru.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/tr.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/us.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/async/downloads/vn.gif" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/async/red/server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/async/red/subscriber.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/async/ws/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/async/ws/client2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/async/ws/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/async/aio/que.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/async/pymotw/chain.py" afterPath="$PROJECT_DIR$/async/pymotw/chain.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/async/ws/base_ws.py" afterPath="$PROJECT_DIR$/async/ws/base_ws.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,12 +19,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/cookbook$base_ws.coverage" NAME="base_ws Coverage Results" MODIFIED="1495116416338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async/ws" />
+    <SUITE FILE_PATH="coverage/cookbook$client__1_.coverage" NAME="subscriber Coverage Results" MODIFIED="1495121387950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async/red" />
     <SUITE FILE_PATH="coverage/cookbook$load_with_semaphore.coverage" NAME="load_with_semaphore Coverage Results" MODIFIED="1494190314515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async/aio" />
     <SUITE FILE_PATH="coverage/cookbook$final.coverage" NAME="final Coverage Results" MODIFIED="1491121121636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yield" />
     <SUITE FILE_PATH="coverage/cookbook$gettime.coverage" NAME="gettime Coverage Results" MODIFIED="1490526006423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/irest" />
     <SUITE FILE_PATH="coverage/cookbook$simple_thread.coverage" NAME="simple_thread Coverage Results" MODIFIED="1492627717218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/threading_learn" />
     <SUITE FILE_PATH="coverage/cookbook$05_yield.coverage" NAME="05_yield Coverage Results" MODIFIED="1491492757881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yield" />
     <SUITE FILE_PATH="coverage/cookbook$tmp__1_.coverage" NAME="cook Coverage Results" MODIFIED="1490466108356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cookbook$client.coverage" NAME="client Coverage Results" MODIFIED="1495055423985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async/ws" />
     <SUITE FILE_PATH="coverage/cookbook$delegate.coverage" NAME="delegate Coverage Results" MODIFIED="1494777445278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async/aio" />
     <SUITE FILE_PATH="coverage/cookbook$async.coverage" NAME="sync Coverage Results" MODIFIED="1491645959593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async" />
     <SUITE FILE_PATH="coverage/cookbook$rest.coverage" NAME="rest Coverage Results" MODIFIED="1490525979545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/irest" />
@@ -76,9 +44,10 @@
     <SUITE FILE_PATH="coverage/cookbook$04_yield.coverage" NAME="04_yield Coverage Results" MODIFIED="1494684363639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yield" />
     <SUITE FILE_PATH="coverage/cookbook$test.coverage" NAME="test Coverage Results" MODIFIED="1494067279095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async/aio" />
     <SUITE FILE_PATH="coverage/cookbook$chain.coverage" NAME="chain Coverage Results" MODIFIED="1494848609509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async/pymotw" />
+    <SUITE FILE_PATH="coverage/cookbook$client2.coverage" NAME="client2 Coverage Results" MODIFIED="1495055426292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async/ws" />
     <SUITE FILE_PATH="coverage/cookbook$cook.coverage" NAME="cook Coverage Results" MODIFIED="1490523389791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cookbook$m_yield.coverage" NAME="m_yield Coverage Results" MODIFIED="1494169607488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cookbook$main.coverage" NAME="main Coverage Results" MODIFIED="1493919940145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async/aio" />
+    <SUITE FILE_PATH="coverage/cookbook$main.coverage" NAME="server Coverage Results" MODIFIED="1495121375728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async/ws" />
     <SUITE FILE_PATH="coverage/cookbook$condition_.coverage" NAME="condition_ Coverage Results" MODIFIED="1492013063060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/threading_learn" />
     <SUITE FILE_PATH="coverage/cookbook$ttt.coverage" NAME="ttt Coverage Results" MODIFIED="1494136920348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/async/aio" />
     <SUITE FILE_PATH="coverage/cookbook$gen.coverage" NAME="gen Coverage Results" MODIFIED="1494680648257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/yield" />
@@ -96,34 +65,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="load_with_semaphore.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/aio/load_with_semaphore.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#1443#1486#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="download.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/async/aio/download.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+              <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="other_session.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="other_session.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/async/aio/other_session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="527">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -131,35 +87,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delegate.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/aio/delegate.py">
+      <file leaf-file-name="base_ws.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/ws/base_ws.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+            <state relative-caret-position="459">
+              <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
               <folding>
-                <element signature="e#516#541#0" expanded="false" />
+                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#81#95#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delegate_asyncio.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/aio/delegate_asyncio.py">
+      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/red/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="52" column="15" lean-forward="true" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
               <folding>
-                <element signature="e#506#526#0" expanded="false" />
+                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#67#81#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chain.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/pymotw/chain.py">
+      <file leaf-file-name="subscriber.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/async/red/subscriber.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#490#522#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/aibase/lib/python3.4/site-packages/redis/client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="2244" column="8" lean-forward="false" selection-start-line="2244" selection-start-column="8" selection-end-line="2244" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/ws/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -170,6 +151,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -195,6 +177,15 @@
         <option value="$PROJECT_DIR$/async/pymotw/chain.py" />
         <option value="$PROJECT_DIR$/async/aio/download.py" />
         <option value="$PROJECT_DIR$/async/aio/other_session.py" />
+        <option value="$PROJECT_DIR$/async/ws/index.html" />
+        <option value="$PROJECT_DIR$/async/ws/client.py" />
+        <option value="$PROJECT_DIR$/async/ws/client2.py" />
+        <option value="$PROJECT_DIR$/async/ws/main.py" />
+        <option value="$PROJECT_DIR$/async/red/client.py" />
+        <option value="$PROJECT_DIR$/async/ws/base_ws.py" />
+        <option value="$PROJECT_DIR$/async/red/main.py" />
+        <option value="$PROJECT_DIR$/async/red/subscriber.py" />
+        <option value="$PROJECT_DIR$/async/red/server.py" />
       </list>
     </option>
   </component>
@@ -205,10 +196,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="398" />
-    <option name="y" value="2" />
-    <option name="width" value="1276" />
-    <option name="height" value="1078" />
+    <option name="x" value="32" />
+    <option name="width" value="1483" />
+    <option name="height" value="1077" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -226,8 +216,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -268,7 +256,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pymotw" />
+              <option name="myItemId" value="ws" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cookbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cookbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="async" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="red" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,6 +298,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,9 +308,11 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/drag/PycharmProjects/cookbook/async/aio/flags.py" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="add_unversioned_files" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/async/red" />
       <recent name="$PROJECT_DIR$/async/aio" />
     </key>
   </component>
@@ -318,97 +328,97 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.other_session">
-    <configuration default="false" name="delegate_asyncio" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.subscriber">
+    <configuration default="false" name="base_ws" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/async/aio" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/async/ws" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="cookbook" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/async/aio/delegate_asyncio.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/async/ws/base_ws.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="condotion_asvetlov" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/threading_learn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/async/ws" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="cookbook" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/threading_learn/condotion_asvetlov.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/async/ws/client.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="chain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="client2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/async/pymotw" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/async/ws" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="cookbook" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/async/pymotw/chain.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/async/ws/client2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="download" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/async/aio" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/async/ws" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="cookbook" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/async/aio/download.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/async/red/server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="other_session" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="subscriber" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/async/aio" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/async/red" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="cookbook" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/async/aio/other_session.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/async/red/subscriber.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -563,19 +573,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.delegate_asyncio" />
-      <item index="1" class="java.lang.String" itemvalue="Python.condotion_asvetlov" />
-      <item index="2" class="java.lang.String" itemvalue="Python.chain" />
-      <item index="3" class="java.lang.String" itemvalue="Python.download" />
-      <item index="4" class="java.lang.String" itemvalue="Python.other_session" />
+      <item index="0" class="java.lang.String" itemvalue="Python.base_ws" />
+      <item index="1" class="java.lang.String" itemvalue="Python.client" />
+      <item index="2" class="java.lang.String" itemvalue="Python.client2" />
+      <item index="3" class="java.lang.String" itemvalue="Python.server" />
+      <item index="4" class="java.lang.String" itemvalue="Python.subscriber" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.other_session" />
-        <item index="1" class="java.lang.String" itemvalue="Python.download" />
-        <item index="2" class="java.lang.String" itemvalue="Python.chain" />
-        <item index="3" class="java.lang.String" itemvalue="Python.delegate_asyncio" />
-        <item index="4" class="java.lang.String" itemvalue="Python.condotion_asvetlov" />
+        <item index="0" class="java.lang.String" itemvalue="Python.subscriber" />
+        <item index="1" class="java.lang.String" itemvalue="Python.server" />
+        <item index="2" class="java.lang.String" itemvalue="Python.base_ws" />
+        <item index="3" class="java.lang.String" itemvalue="Python.client2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.client" />
       </list>
     </recent_temporary>
   </component>
@@ -605,28 +615,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="398" y="2" width="1276" height="1078" extended-state="1" />
+    <frame x="32" y="0" width="1483" height="1077" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838982" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26202092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32799146" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.50269854" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837406" sideWeight="0.49730146" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32624868" sideWeight="0.49730146" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838982" sideWeight="0.49730146" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28338763" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837406" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287234" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32799146" sideWeight="0.49730146" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24468085" sideWeight="0.49730146" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32799146" sideWeight="0.49730146" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26399156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2638298" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837406" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -659,72 +669,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="117" />
+      <option name="time" value="123" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tmp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sim.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lazy_sort_heap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/que_heap_priority.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deque_history.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deduple.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/bd.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/m_yield.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/async/aio/flags.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
@@ -732,76 +681,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/pk.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/mx.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/fr.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/cn.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/br.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/tr.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/us.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/vn.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/de.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/ru.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/jp.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/in.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/ph.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/downloads/eg.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/pk.gif" />
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/mx.gif" />
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/fr.gif" />
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/cn.gif" />
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/br.gif" />
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/tr.gif" />
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/us.gif" />
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/vn.gif" />
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/de.gif" />
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/ru.gif" />
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/jp.gif" />
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/in.gif" />
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/ph.gif" />
+    <entry file="file://$PROJECT_DIR$/async/aio/downloads/eg.gif" />
     <entry file="file://$PROJECT_DIR$/yield/lazy_finditer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -854,20 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/que.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python3.4/asyncio/coroutines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
@@ -880,7 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="338" column="0" lean-forward="false" selection-start-line="338" selection-start-column="0" selection-end-line="338" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -954,36 +831,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/pymotw/chain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/aio/delegate_asyncio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#506#526#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/async/aio/load_with_semaphore.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="510">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#1443#1486#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/aio/que.py" />
+    <entry file="file://$PROJECT_DIR$/async/aio/delegate_asyncio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -991,26 +853,118 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-          <folding>
-            <element signature="e#516#541#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/pymotw/chain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/async/aio/download.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+          <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/aibase/lib/python3.4/site-packages/websockets/protocol.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/async/aio/other_session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="527">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/aibase/lib/python3.4/site-packages/redis/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="581" column="0" lean-forward="false" selection-start-line="581" selection-start-column="0" selection-end-line="581" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/aio/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/ws/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/ws/client2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/ws/base_ws.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="68" column="22" lean-forward="true" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#81#95#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/ws/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/aibase/lib/python3.4/site-packages/redis/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="2244" column="8" lean-forward="false" selection-start-line="2244" selection-start-column="8" selection-end-line="2244" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/red/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="52" column="15" lean-forward="true" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#67#81#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/red/subscriber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#490#522#0" expanded="false" />
           </folding>
         </state>
       </provider>
