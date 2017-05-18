@@ -14,9 +14,9 @@ def listner(channel):
 def prepare():
     conn = yield from aioredis.create_redis(('localhost', 6379))
     conn.delete('all')
-    res = yield from conn.subscribe('all')
-    channel = res[0]
-    yield from asyncio.async(listner(channel))
+
+    ch = yield from conn.subscribe('all')
+    yield from listner(ch[0])
 
 
 asyncio.get_event_loop().run_until_complete(prepare())
