@@ -2,6 +2,7 @@ import asyncio
 import functools
 import aioredis
 import websockets
+import uuid
 
 connected = set()
 CHANNEL = 'chanel_A'
@@ -15,9 +16,10 @@ class Session:
         global connected
         self.socket = ws
         self.connected = connected
+        self.name = str(uuid.uuid4())
 
     def __enter__(self):
-        print('Client connected')
+        print('Client %s connected' % self.name)
         self.connected.add(self.socket)
 
     def __exit__(self, exc_type, exc_val, exc_tb):
@@ -46,11 +48,13 @@ def subscribe():
 
 @asyncio.coroutine
 def connect(ws, path, **kwargs):
-    with Session(ws):
+    # print(path)
+    session = Session(ws)
+    with session:
         while True:
             try:
                 data = yield from ws.recv()
-                kwargs['redis_pub'].publish(CHANNEL, data)
+                kwargs['redis_pub'].publish(CHANNEL, '{} > \t\n{}'.format(session.name, data))
             except websockets.ConnectionClosed:
                 break
 

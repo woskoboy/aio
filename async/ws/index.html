@@ -2,30 +2,36 @@
 <html>
     <head>
         <title>WebSocket demo</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
-    <div>
-        <input id='post' type="text" title="Type your message and click 'Send'"/>
-        <button id='button' type="button">SEND</button>
-    </div>
+        <div class="panel panel-primary">
+            <div class="panel panel-heading"><h2>Simple Chart</h2></div>
+            <div class="panel-body">
+                <div class="col-xs-9">
+                    <input class="col-xs-12" id='post' placeholder="Type text here" type="text" title="Type your message and click 'Send'"/>
+                    <!--<textarea id='post' class="col-xs-12" placeholder="Type text here" rows="2"></textarea>-->
+                </div>
+                <div class="col-xs-1">
+                    <button id='button' type="button" class="btn btn-primary btn-lg">SEND</button>
+                </div>
+             </div>
+            <div class="panel-body" id="posts"></div>
+        </div>
         <script>
-            var ws = new WebSocket("ws://127.0.0.1:8765/"),
-                messages = document.createElement('ul');
-
-            ws.onmessage = function (event) {
-                var messages = document.getElementsByTagName('ul')[0],
-                    message = document.createElement('li'),
-                    content = document.createTextNode(event.data);
-                message.appendChild(content);
-                messages.appendChild(message);
-            };
-            document.body.appendChild(messages);
-
+            var ws = new WebSocket("ws://127.0.0.1:8765/hi");
+                ws.onmessage = function (event) {
+                    var messages = document.getElementById('posts');
+                    var message = document.createElement('div');
+                    message.setAttribute('class', 'alert alert-success');
+                    var content = document.createTextNode(event.data);
+                    message.appendChild(content);
+                    messages.appendChild(message);};
+            
             var button = document.getElementById('button');
             var input = document.getElementById('post');
-            button.onclick = function (event) {
-                ws.send(input.value);
-            }
+            button.onclick = function (event) {ws.send(input.value);}
         </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </body>
 </html>

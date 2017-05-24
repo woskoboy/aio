@@ -1,1 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
+/vk2slack/main.py
+/vk2slack/offsets.py
+Будет удалено async/aio/downloads/
