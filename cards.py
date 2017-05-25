@@ -1,54 +1,66 @@
-import functools
-from operator import itemgetter, attrgetter, mul
-from collections import namedtuple
-
-res = functools.reduce(lambda a, b: a * b, range(1, 6))
-# print(res)
-
-data = [
-    ('RU', 'Russia', 'r', (36, 45)),
-    ('JN', 'Japanise', 'j', (87, 44)),
-    ('CN', 'China', 'c', (68, 78)),
-    ('US', 'USA', 'u', (63, 91)),
-]
-
-MStation = namedtuple('MStation', 'code letter coord name')
-Coord = namedtuple('Coord', 'lat lon')
-metro = []
-for code, name, letter, (lat, lon) in data:
-    metro.append(MStation(
-        code=code, letter=letter, name=name, coord=Coord(lat=lat, lon=lon)))
-
-""" сортировка станций по выбранному атрибуту """
-for station in sorted(metro, key=attrgetter('coord.lon')):
-    print(station)
-
-"""сортировка кортежей по n-ому элементу"""
-sd = sorted(data, key=itemgetter(1))
-print(sd)
-'''выборка элементов из кортежей'''
-ig = itemgetter(0, 3)
-for city in data:
-    code, (l, lat) = ig(city)
-    print(code, l, lat)
-
-mulon = functools.partial(mul, 3)
-res = map(mulon, range(1, 10))
-print(list(res))
+def fac(n):
+    if n < 2:
+        return 1
+    else:
+        tmp = n * fac(n - 1)
+        print(tmp)
+        return tmp
 
 
-def getme(a, *c):
-    for n in c:
-        a *= n
-    print(a)
+fac(5)
+
+# import functools
+# from operator import itemgetter, attrgetter, mul
+# from collections import namedtuple
+
+# res = functools.reduce(lambda a, b: a * b, range(1, 6))
+# # print(res)
+# functools.reduce
+
+# data = [
+#     ('RU', 'Russia', 'r', (36, 45)),
+#     ('JN', 'Japanise', 'j', (87, 44)),
+#     ('CN', 'China', 'c', (68, 78)),
+#     ('US', 'USA', 'u', (63, 91)),
+# ]
+
+# MStation = namedtuple('MStation', 'code letter coord name')
+# Coord = namedtuple('Coord', 'lat lon')
+# metro = []
+# for code, name, letter, (lat, lon) in data:
+#     metro.append(MStation(
+#         code=code, letter=letter, name=name, coord=Coord(lat=lat, lon=lon)))
+
+#  сортировка станций по выбранному атрибуту 
+# for station in sorted(metro, key=attrgetter('coord.lon')):
+#     print(station)
+
+# """сортировка кортежей по n-ому элементу"""
+# sd = sorted(data, key=itemgetter(1))
+# print(sd)
+# '''выборка элементов из кортежей'''
+# ig = itemgetter(0, 3)
+# for city in data:
+#     code, (l, lat) = ig(city)
+#     print(code, l, lat)
+
+# mulon = functools.partial(mul, 3)
+# res = map(mulon, range(1, 10))
+# print(list(res))
 
 
-values = [i for i in range(3, 6)]
-getme(1, 2, *values)
-# or
-new_getme = functools.partial(getme, 1)
-vals = [n for n in range(2, 6)]
-new_getme(*vals)
+# def getme(a, *c):
+#     for n in c:
+#         a *= n
+#     print(a)
+
+
+# values = [i for i in range(3, 6)]
+# getme(1, 2, *values)
+# # or
+# new_getme = functools.partial(getme, 1)
+# vals = [n for n in range(2, 6)]
+# new_getme(*vals)
 
 # def anyfunc(arg):
 #   a = 1

@@ -1,5 +1,7 @@
 import asyncio
 import functools
+import html
+
 import aioredis
 import websockets
 import uuid
@@ -10,6 +12,10 @@ RHOST = 'localhost'
 RPORT = 6379
 WSHOST = 'localhost'
 
+""" 
+create_redis - вызывается дважды для публикации и подписки 
+глобальная перем-я connected - хранит список активных подключений
+"""
 
 class Session:
     def __init__(self, ws):
@@ -28,7 +34,7 @@ class Session:
 
 
 @asyncio.coroutine
-def listner(channel):
+def channel_reader(channel):
     while (yield from channel.wait_message()):
         msg = yield from channel.get(encoding="utf-*")
         print('Message: {} from {}'.format(msg, channel.name))
@@ -38,23 +44,23 @@ def listner(channel):
 
 
 @asyncio.coroutine
-def subscribe():
+def start_listener():
     redis_sub = yield from aioredis.create_redis((RHOST, RPORT))
     redis_sub.delete(CHANNEL)
 
     ch = yield from redis_sub.subscribe(CHANNEL)
-    yield from listner(ch[0])
+    yield from channel_reader(ch[0])
 
 
 @asyncio.coroutine
 def connect(ws, path, **kwargs):
-    # print(path)
     session = Session(ws)
     with session:
         while True:
             try:
                 data = yield from ws.recv()
-                kwargs['redis_pub'].publish(CHANNEL, '{} > \t\n{}'.format(session.name, data))
+                msg = '{} > {}'.format(session.name, data)
+                kwargs['redis_pub'].publish(CHANNEL, msg)
             except websockets.ConnectionClosed:
                 break
 
@@ -64,7 +70,7 @@ def start_server():
     redis_pub = yield from aioredis.create_redis((RHOST, RPORT))
     yield from websockets.serve(functools.partial(connect, redis_pub=redis_pub), WSHOST, 8765)
 
-    yield from subscribe()
+    yield from start_listener()
 
 if __name__ == '__main__':
 

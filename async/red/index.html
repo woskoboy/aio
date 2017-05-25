@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebSocket demo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">-->
+        <!--<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet"> -->
+        <!--<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">-->
+        <!--<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">-->
+        <!--<link href="https://fonts.googleapis.com/css?family=Kelly+Slab" rel="stylesheet">-->
+        <!--<link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">-->
+        <!--<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet"> -->
+        <!--<link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">-->
+        <!--<link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">-->
+        <!--<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">-->
+        <!--<link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">-->
+        <!--<link href="https://fonts.googleapis.com/css?family=Yeseva" rel="stylesheet"> -->
+        <!--<link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet"> -->
+        <!--<link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet"> -->
+        <!--<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet"> -->
+        <!--<link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet"> -->
+        <!--<link href="https://fonts.googleapis.com/css?family=Underdog" rel="stylesheet">-->
+        <!--<link href="https://fonts.googleapis.com/css?family=Seymour+One" rel="stylesheet"> -->
+    </head>
+    <body>
+    <div style="
+    /*font-family: 'Lobster', cursive;*/
+    /*font-family: 'Russo One', sans-serif;*/
+    font-family: 'Philosopher', sans-serif;
+    /*font-family: 'Bad Script', cursive;*/
+    /*font-family: 'Marck Script', cursive;*/
+    /*font-family: 'Neucha', cursive;*/
+    /*font-family: 'Press Start 2P', cursive;*/
+    /*font-family: 'Ruslan Display', cursive;*/
+    /*font-family: 'Pattaya', sans-serif;*/
+    /*font-family: 'Stalinist One', cursive;*/
+    /*font-family: 'Jura', sans-serif;*/
+    /*font-family: 'Pangolin', cursive;*/
+    /*font-family: 'Kelly Slab', cursive;*/
+    /*font-family: 'Gabriela', serif;*/
+    /*font-family: 'Kurale', serif;*/
+    /*font-family: 'Yeseva One', cursive;*/
+    /*font-family: 'Rubik Mono One', sans-serif;*/
+    /*font-family: 'Cormorant Infant', serif;*/
+    /*font-family: 'Underdog', cursive;*/
+    /*font-family: 'Seymour One', sans-serif;*/
+    ">
+        <div
+            style="position: fixed; z-index: 2; top: 0px; left: 0px; bottom: 0px; right: 0px;
+            overflow: hidden;background-color: #000000; opacity: 0.75;">
+
+        </div>
+        <video style="visibility: visible; margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%;
+         transform: translate(-50%, -50%); width: auto; height: auto;" autoplay="" loop="">
+            <source src="http://oceanjetband.com/wp-content/uploads/2017/05/sky-1.mp4" type="video/mp4">
+        </video>
+
+        <div>
+
+            <div class="col-md-6 col-md-offset-3" style="position: fixed; z-index: 2; height: 85%;">
+             <!--background-color: brown; -->
+
+                <div class="row">
+                    <br>
+                    <div class="panel-primary panel-heading row">
+                        <h2 style="text-align:center; color: #FFFFFF;">Аноним Чат</h2>
+                    </div>
+                </div>
+
+                <div class="row" style=" overflow-y: auto; height: 85%"  id="posts">
+                    <!--background-color: cadetblue; -->
+                </div>
+
+                <div class="row" id="interface" >
+                    <div class="col col-md-8">
+                        <input class="input-lg" style="width: 100%" id='post' placeholder=" Печатай сюда "
+                               type="text" title="Печатай сюда"/>
+                    </div>
+                    <div class="col col-md-4">
+                        <button id='button' type="button" class="btn btn-primary btn-lg" style="width: 100%">Отправить
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <script>
+            var ws = new WebSocket("ws://127.0.0.1:8765/hi");
+                ws.onmessage = function (event) {
+                    var messages = document.getElementById('posts');
+                    var message = document.createElement('div');
+                    message.setAttribute('class', 'alert');
+                    message.setAttribute('style', 'color: #FFFFFF; font-size: large;');
+                    var content = document.createTextNode(event.data);
+                    message.appendChild(content);
+                    messages.appendChild(message);
+                    messages.scrollTop = messages.scrollHeight;
+                };
+            
+            var button = document.getElementById('button');
+            var input = document.getElementById('post');
+            button.onclick = function (event) {ws.send(input.value);}
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </div>
+    </body>
+</html>
