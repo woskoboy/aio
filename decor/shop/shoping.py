@@ -1,4 +1,4 @@
-from shop.myshop import Customer, ItemCart, Order, BigCartPromo, BonusPromo, DifferentItemsPromo
+from decor.shop.myshop import Customer, ItemCart, Order, BigCartPromo, BonusPromo, DifferentItemsPromo
 
 joe = Customer(name='Joe', bonus=1000)
 ann = Customer(name='Ann', bonus=0)

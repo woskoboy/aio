@@ -3,7 +3,7 @@ import time
 
 
 def clock(func):
-
+    # @functools.wraps(func)
     def clocked(*args):
         name = func.__name__ + ', '.join(repr(arg) for arg in args)
         start = time.time()
@@ -16,8 +16,9 @@ def clock(func):
     return clocked
 
 
-# @clock
-# def factorial(n):
-#     return 1 if n < 2 else n*factorial(n-1)
-#
-# print(factorial(5))
+@clock
+def factorial(n):
+    # print(factorial.__name__)
+    return 1 if n < 2 else n*factorial(n-1)
+
+print(factorial(5))

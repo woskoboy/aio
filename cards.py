@@ -1,13 +1,65 @@
-def fac(n):
-    if n < 2:
-        return 1
-    else:
-        tmp = n * fac(n - 1)
-        print(tmp)
-        return tmp
+def f_ap(f_s):
+    def nf(*args):
+        print('f_ap work with ', f_s.__name__)
+        s = f_s(*args)
+        if isinstance(s, str):
+            print('was converted to string')
+            return s
+    return nf
 
 
-fac(5)
+def f_s(f):
+    def new_f(*args):
+        print('new_f work with ', f.__name__)
+        dig = f(*args)
+        return str(dig)
+    return new_f
+
+
+@f_ap
+@f_s
+def f(dig):
+    print('link to ', f.__name__)
+    return 'end', dig
+
+
+print(f(78))
+
+
+# from collections import ChainMap
+
+# car_parts = {
+#     'hood': 500,
+#     'engine': 5000,
+#     'front_door': 750
+# }
+
+# car_options = {
+#     'A/C': 1000,
+#     'Turbo': 2500,
+#     'rollbar': 300
+# }
+
+# car_accessories = {
+#     'cover': 100,
+#     'hood_ornament': 150,
+#     'seat_cover': 99
+# }
+
+# car_pricing = ChainMap(car_accessories, car_options, car_parts)
+
+# print(car_pricing)
+
+# def fac(n):
+#     if n < 2:
+#         return 1
+#     else:
+#         tmp = n * fac(n - 1)
+#         print(tmp)
+#         return tmp
+
+
+# fac(5)
 
 # import functools
 # from operator import itemgetter, attrgetter, mul

@@ -1,5 +1,8 @@
 from collections import namedtuple
-from shop.func_op import ItemCart, Order, PROMOTIONS
+
+from decor.shop.func_op import ItemCart, Order, PROMOTIONS
+
+
 # ,Customer, best_promo  # big_cart_promo, bonus_promo, different_items_promo
 # import inspect
 # from shop import func_op
@@ -8,8 +11,7 @@ from shop.func_op import ItemCart, Order, PROMOTIONS
 def best_promo(order):
     """ возвращает максимальный размер скидки """
     # promos = [func for name, func in inspect.getmembers(func_op, inspect.isfunction)]
-    promos = [func for func in PROMOTIONS]
-    return max(promo(order) for promo in promos)
+    return max(promo(order) for promo in PROMOTIONS)
 
 Customer = namedtuple('Customer', 'name bonus')
 joe = Customer(name='Joe', bonus=1000)

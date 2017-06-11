@@ -80,20 +80,16 @@
                                type="text" title="Печатай сюда"/>
                     </div>
                     <div class="col col-md-4">
-                        <button id='button' type="button" class="btn btn-primary btn-lg" style="width: 100%">Отправить
-                        </button>
+                        <input id='button' type="button" class="btn btn-primary btn-lg" style="width: 100%" value="Отправить"/>
                     </div>
                 </div>
             </div>
 
-
-
         </div>
 
-
-
-
         <script>
+
+
             var ws = new WebSocket("ws://127.0.0.1:8765/hi");
                 ws.onmessage = function (event) {
                     var messages = document.getElementById('posts');
@@ -105,10 +101,23 @@
                     messages.appendChild(message);
                     messages.scrollTop = messages.scrollHeight;
                 };
-            
+
             var button = document.getElementById('button');
             var input = document.getElementById('post');
-            button.onclick = function (event) {ws.send(input.value);}
+            button.onclick = function (event) {
+                ws.send(input.value);
+                input.value = '';
+            };
+
+            document.onkeyup = function (e) {
+	            e = e || window.event;
+	            if (e.keyCode === 13) {
+	                button.onclick()
+	                }
+	                 // Отменяем действие браузера
+                return false;
+	        };
+
         </script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </div>

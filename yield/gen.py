@@ -8,6 +8,7 @@ class Iterable:
         self.words = re.findall(r'\w+', text)
 
     def __iter__(self):
+        # return (word for word in self.words)
         for word in self.words:
             yield word
         '''return iter(self.words)'''
@@ -28,6 +29,6 @@ for word in Iterable(s):  # for = iter(obj) then next(obj) ...
 # print(next(it))
 # print(next(it))
 
-gen = Iterable(s)
-for i in gen:
+
+for i in Iterable(s):
     print(i)

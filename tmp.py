@@ -13,6 +13,7 @@
 #
 # u2.age = 100
 # print(u2.age)
+from array import array
 
 """ sorted max min """
 # from heapq import nlargest
@@ -104,8 +105,7 @@
 #                 print('{}:{}'.format(lineno, hline), end='')
 
 """ """
-with open('book.txt') as f:
-    lines = (line for line in f if not line.startswith('#'))
-    for line in lines:
-        print(line, end='')
-
+# with open('book.txt') as f:
+#     lines = (line for line in f if not line.startswith('#'))
+#     for line in lines:
+#         print(line, end='')
