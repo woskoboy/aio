@@ -2,15 +2,10 @@ import json
 from collections import defaultdict
 import asyncio
 from vk2slack.test import save_counts, read_counts
+from vk2slack.mconst import *
 import aiohttp
 
-TOKEN_VK = 'd4c469b1d4c469b1d4c469b18dd4984f49dd4c4d4c469b18ddb404ee3cf5d2e72933b4b'
-GIDS = 30666517,  142410745, 54530371
-# LAST_COUNTS = {30666517: 18820, 142410745: 45, 54530371: 5500}
-METHOD = 'wall.get'
-URL = 'https://api.vk.com/method/{method}?owner_id=-{gid}&v=5.64&access_token={token}&count={count}&offset={offset}'
-POST = '<https://vk.com/public{gid}?w=wall-{gid}_{item_id}>'
-SLACK_URL = 'https://hooks.slack.com/services/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'
+
 SLACK_PAYLOADS = defaultdict()
 
 CONST = 10
@@ -35,7 +30,7 @@ def counter(gid, dif_count):
 def get_posts(gid):
     start_count = LAST_COUNTS[gid]
     with aiohttp.ClientSession() as session:
-        res = yield from session.get(URL.format(method=METHOD, gid=gid, token=TOKEN_VK, count=1, offset=0))
+        res = yield from session.get(URL_WITH_OFFSET.format(method=METHOD, gid=gid, token=TOKEN_VK, count=1, offset=0))
         if res.status == 200:
             content = yield from res.json()
             last_count = content['response']['count']
@@ -48,7 +43,7 @@ def get_posts(gid):
 
             cos = counter(gid, dif)
             for c, o in cos:
-                res = yield from session.get(URL.format(method=METHOD, gid=gid, token=TOKEN_VK, count=c, offset=o))
+                res = yield from session.get(URL_WITH_OFFSET.format(method=METHOD, gid=gid, token=TOKEN_VK, count=c, offset=o))
                 content = yield from res.json()
                 for item in content['response']['items']:
                     link = POST.format(gid=gid, item_id=item['id'])

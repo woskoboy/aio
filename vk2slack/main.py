@@ -1,18 +1,13 @@
 import asyncio
 import aiohttp
+from vk2slack.mconst import *
 # import vk
 # import json
 # import slacker
 # import requests
 from collections import defaultdict
 
-TOKEN_VK = 'd4c469b1d4c469b1d4c469b18dd4984f49dd4c4d4c469b18ddb404ee3cf5d2e72933b4b'
-GIDS = 30666517, 142410745, 54530371
-METHOD = 'wall.get'
-URL = 'https://api.vk.com/method/{method}?owner_id=-{gid}&v=5.64&access_token={token}'
-POST = '<https://vk.com/public{gid}?w=wall-{gid}_{item_id}>'
 
-SLACK_URL = 'https://hooks.slack.com/services/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'
 SLACK_PAYLOADS = defaultdict()
 
 

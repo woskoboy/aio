@@ -1,29 +1,78 @@
-def f_ap(f_s):
-    def nf(*args):
-        print('f_ap work with ', f_s.__name__)
-        s = f_s(*args)
-        if isinstance(s, str):
-            print('was converted to string')
-            return s
-    return nf
+class Base:
+    c = 0
 
 
-def f_s(f):
-    def new_f(*args):
-        print('new_f work with ', f.__name__)
-        dig = f(*args)
-        return str(dig)
-    return new_f
+class Child(Base):
+    pass
+    # c = 10
 
 
-@f_ap
-@f_s
-def f(dig):
-    print('link to ', f.__name__)
-    return 'end', dig
+ch = Child()
+ch.c = 10
+print(ch.c)
+print(Base.c)
+
+# class Rec:
+#     def __init__(self, a, b):
+#         self.a = a
+#         self.b = b
+
+#     def __repr__(self):
+#         return "Rec(%.1f, %.1f)" % (self.a, self.b)
 
 
-print(f(78))
+# class Cir:
+#     def __init__(self, r):
+#         self.r = r
+
+#     def __repr__(self):
+#         return "Cir(%.1f)" % self.r
+
+#     @classmethod
+#     def from_rec(cls, rec):
+#         r = (rec.a ** 2 + rec.b ** 2) ** 0.5 / 2
+#         return cls(r)
+
+
+# rec = Rec(3, 4)
+# print(rec)
+
+# cir = Cir(1)
+# print(cir)
+
+# cir2 = Cir.from_rec(rec)
+# print(cir2)
+
+
+
+
+
+# def f_ap(f_s):
+#     def nf(*args):
+#         print('f_ap work with ', f_s.__name__)
+#         s = f_s(*args)
+#         if isinstance(s, str):
+#             print('was converted to string')
+#             return s
+#     return nf
+
+
+# def f_s(f):
+#     def new_f(*args):
+#         print('new_f work with ', f.__name__)
+#         dig = f(*args)
+#         return str(dig)
+#     return new_f
+
+
+# @f_ap
+# @f_s
+# def f(dig):
+#     print('link to ', f.__name__)
+#     return 'end', dig
+
+
+# print(f(78))
 
 
 # from collections import ChainMap
