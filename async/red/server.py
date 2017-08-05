@@ -31,6 +31,7 @@ class Session:
         self.connected.add(self.socket)
 
     def __exit__(self, exc_type, exc_val, exc_tb):
+        print(exc_type, exc_val, exc_tb)
         print('Client disconnected')
         self.connected.remove(self.socket)
 
